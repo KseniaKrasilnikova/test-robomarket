@@ -1,0 +1,23 @@
+mixin filter()
+  -
+    const filterData = [
+      {
+        name: "All",
+        className: "is-active"
+      },
+      {
+        name: "Web Design"
+      },
+      {
+        name: "Graphic Design"
+      },
+      {
+        name: "Marketing"
+      },
+    ]
+
+  .filter
+    ul.filter__controls
+      each filter in filterData
+        li.filter__item
+          button(class!=filter.className type="button" aria-label!=filter.name).filter__btn.button.button--control!=filter.name

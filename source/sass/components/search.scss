@@ -1,0 +1,8 @@
+.search {
+  max-width: 400px;
+  margin-bottom: 20px;
+
+  @include vp--767 {
+    max-width: 100%;
+  }
+}

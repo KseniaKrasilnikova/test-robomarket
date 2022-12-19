@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "MyriadPro";
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+
+  src:
+    url("../fonts/myriadProBold.woff2") format("woff2"),
+    url("../fonts/myriadProBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "MyriadPro";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+
+  src:
+    url("../fonts/myriadProReg.woff2") format("woff2"),
+    url("../fonts/myriadProReg.woff") format("woff");
+}
+
+//
+//@font-face {
+//  font-family: "Roboto";
+//  font-style: normal;
+//  font-weight: 400;
+//  font-display: swap;
+//
+//  src:
+//    url("../fonts/roboto-cyrillic-regular.woff2") format("woff2"),
+//    url("../fonts/roboto-cyrillic-regular.woff") format("woff");
+//}
+//
+//@font-face {
+//  font-family: "Roboto";
+//  font-style: normal;
+//  font-weight: 700;
+//  font-display: swap;
+//
+//  src:
+//    url("../fonts/roboto-cyrillic-700.woff2") format("woff2"),
+//    url("../fonts/roboto-cyrillic-700.woff") format("woff");
+//}

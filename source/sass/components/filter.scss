@@ -1,0 +1,51 @@
+.filter {
+  @include vp--767 {
+    margin-right: -16px;
+    overflow: visible;
+  }
+
+  &__controls {
+    @include reset-list;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    @include vp--767 {
+      position: relative;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      margin: 0 -16px 13px;
+
+      &:after {
+        flex-shrink: 0;
+        content: "";
+        width: 16px;
+        height: 100%;
+        background-color: $color-transparent;
+      }
+    }
+  }
+
+  &__item {
+    margin-bottom: 10px;
+
+    @include vp--767 {
+      &:first-child {
+        padding-left: 20px;
+      }
+
+      &:last-child {
+        padding-right: 20px;
+      }
+    }
+  }
+
+  &__btn {
+    padding: 14px 20px;
+
+    @include vp--767 {
+      padding: 14px 16px;
+    }
+  }
+}

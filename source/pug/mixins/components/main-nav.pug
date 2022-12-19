@@ -1,0 +1,18 @@
+mixin main-nav(data)
+  nav.main-nav
+    ul.main-nav__list
+      each card in data
+        li.main-nav__item
+          .main-nav__link(class!=card.classMod)
+            .main-nav__icon
+              +icon(card.icon.name, card.icon.width, card.icon.height)
+            p.title.title--md.main-nav__title!=card.title
+            .main-nav__overflow
+              p.main-nav__description!=card.description
+            if(card.categories)
+              .main-nav__categoriesWrapper
+                ul.main-nav__categoriesList.custom-scrollbar
+                  each category in card.categories
+                    li.main-nav__category
+                      a(href=category.href aria-label!=category.text).main-nav__categoryLink.hover-mainTheme!=category.text
+            a(href="#" aria-label="Read more").main-nav__more.button.button--link.hover-opacity Read more

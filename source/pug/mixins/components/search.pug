@@ -1,0 +1,13 @@
+mixin search(data)
+  - const {mods="", inputId="", inputName="", placeholder="", inputError = data.inputError ? data.inputError : false} = data;
+
+    .search
+      .search__input.js-reset-btn
+        form(action="#", method="get")
+          .custom-input(class!=mods)
+            span.custom-input__icon
+              +icon("icon-search", 27, 27)
+            label
+              input(id!=inputId, type="search", name=inputName, placeholder!=placeholder, value=value && value)
+              if inputError
+                .custom-input__error!=inputError

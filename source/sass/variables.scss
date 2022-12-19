@@ -1,0 +1,45 @@
+// Colors
+// Default
+
+$color-default-black:             #000000;
+$color-default-white:             #ffffff;
+$color-transparent:               rgba(255, 255, 255, 0);
+
+// Base
+
+$color-nero:                      #191919;
+$color-denim:                     #1378bf;
+$color-cobalt:                    #005999;
+$color-torch-red:                 #e50000;
+$color-light-grey:                #f5f5f5;
+$color-very-light-grey:           #c7c7c7;
+$color-suva-grey:                 #8c8c8c;
+
+// Typography
+//---------------------------------
+
+//$font-family--roboto:                "Roboto", "Arial", sans-serif;
+$ff--myriadPro:                      "myriadPro", "Arial", sans-serif;
+
+// Animation
+//---------------------------------
+
+$tf-default: ease;
+$trans-default: 0.3s $tf-default;
+
+// Viewports
+//---------------------------------
+
+$vp--320:                           320px;
+$vp--375:                           375px;
+$vp--768:                           768px;
+$vp--1024:                          1024px;
+$vp--1280:                          1280px;
+$vp--1440:                          1440px;
+$vp--1920:                          1920px;
+
+// Retina
+//---------------------------------
+
+$retina-dpi:                        144dpi;
+$retina-dppx:                       1.5dppx;

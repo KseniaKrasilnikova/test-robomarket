@@ -1,0 +1,41 @@
+.title {
+  margin-top: 0;
+
+  &--xl {
+    font-weight: 600;
+    font-size: 90px;
+    line-height: 1.11;
+    text-transform: uppercase;
+
+    @include vp--1279 {
+      font-size: 60px;
+    }
+
+    @include vp--767 {
+      font-size: 40px;
+    }
+  }
+
+  &--lg {
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 1.11;
+
+    @include vp--1279 {
+      font-size: 40px;
+    }
+
+    @include vp--767 {
+      font-size: 28px;
+    }
+  }
+
+  &--md {
+    font-weight: 600;
+    font-size: 24px;
+
+    @include vp--767 {
+      font-size: 18px;
+    }
+  }
+}

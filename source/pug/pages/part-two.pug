@@ -1,0 +1,21 @@
+extends ../base/layout
+
+block variables
+  - const title = "Часть 2"
+  - const wrapperMods = ""
+  - const hasHeader = false
+  - const headerMods = ""
+  - const hasFooter = false
+  - const footerMods = ""
+  - const currentPage = "part-two.html"
+  - const userAuthorized = false
+
+block main
+  main
+    .container
+      .months
+        ul.months__list
+        +search({mods: "custom-input--bordered", inputId: "search", inputName: "search", placeholder: "Search"})
+        table.months__table
+
+  block modals

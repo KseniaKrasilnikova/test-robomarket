@@ -1,0 +1,9 @@
+mixin product-card(data)
+  .product-card
+    a(href="#" aria-label!=data.name).product-card__link
+      .product-card__imgWrapper
+        picture
+          img(src=data.img.src alt=data.img.label).product-card__img
+        .product-card__cover
+      p.product-card__name!=data.name
+      p.product-card__category!=data.category

@@ -1,0 +1,9 @@
+mixin video(name, width, height, alt, dataId)
+  .video(data-id=dataId).shadow
+    #player.video__frame(tabindex="-1")
+    picture
+      source(type='image/webp', srcset="img/content/" + name + "@1x.webp" + ", " + "img/content/" + name + "@2x.webp" + " 2x")
+      img.video__poster(src="img/content/" + name + "@1x.jpg", srcset="img/content/" + name + "@2x.jpg", width=width, height=height, alt=alt)
+
+    button.video__btn(type="button" aria-label="Воспроизвести видео")
+      +icon("play", 112, 136)

@@ -1,0 +1,48 @@
+.months {
+  padding-top: 30px;
+
+  &__list {
+    @include reset-list;
+
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+
+    background-color: $color-light-grey;
+  }
+
+  &__item {
+    margin-right: 20px;
+  }
+
+  &__tab {
+    position: relative;
+  }
+
+  &__badge {
+    position: absolute;
+    content: "";
+    right: -5px;
+    top: 4px;
+    border-radius: 40%;
+    font-size: 11px;
+  }
+}
+
+.months__table {
+  width: 400px;
+  border-collapse: collapse;
+
+  @include vp--767 {
+    width: 100%;
+  }
+
+  td {
+    border-bottom: 2px solid $color-light-grey;
+  }
+}
+
+.td-end {
+  text-align: end;
+  color: $color-suva-grey;
+}

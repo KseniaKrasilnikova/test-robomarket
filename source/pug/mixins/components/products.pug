@@ -1,0 +1,64 @@
+mixin products()
+  -
+    const productsData = [
+      {
+        name: "Item 1",
+        category: "Web Design",
+        img: {
+          src: "https://loremflickr.com/370/240/website/?random=1",
+          width: 370,
+          height: 240,
+          label: "Go to Web Design"
+        }
+      },
+      {
+        name: "Item 2",
+        category: "Web Design",
+        img: {
+          src: "https://loremflickr.com/370/240/website?random=2",
+          width: 370,
+          height: 240,
+          label: "Go to Web Design"
+        }
+      },
+      {
+        name: "Item 3",
+        category: "Web Design",
+        img: {
+          src: "https://loremflickr.com/370/240/website,design/?random=3",
+          width: 370,
+          height: 240,
+          label: "Go to Web Design"
+        }
+      },
+      {
+        name: "Item 4",
+        category: "Marketing",
+        img: {
+          src: "https://loremflickr.com/370/240/marketing?random=4",
+          width: 370,
+          height: 240,
+          label: "Go to Marketing"
+        }
+      },
+      {
+        name: "Item 5",
+        category: "Graphic Design",
+        img: {
+          src: "https://loremflickr.com/370/240/design,graphic/all?random=5",
+          width: 370,
+          height: 240,
+          label: "Go to Graphic Design"
+        }
+      }
+    ]
+  section.products
+    .container
+      .products__header
+        h2.title.title--lg.products__title Lorem Ipsum Dolor
+        +filter()
+      .products__content
+        ul.products__list
+           each product in productsData
+             li.products__item
+               +product-card(product)
